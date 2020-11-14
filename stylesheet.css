@@ -6,9 +6,151 @@
 		font-family: arial;
 	}
 	main{
-		margin-top: 80px;
+		margin-top: 100px;
 	}
-	h1{
+
+
+/* NAVIGATION BAR AND LOGO */
+	header {
+	    background-color: white;
+	    text-align: center;
+	    position: fixed;
+	    z-index: 999;
+	    width: 100%;
+	    top: 0;
+	}
+	
+	.logo {
+	    position: relative;
+	    bottom: 0.2em;
+	    text-align: left;
+	    margin-left: 0.6em;
+	}
+	
+	.logo a {
+	    text-decoration: none;
+	    color: black;
+	    font-size: 0.45em;
+	    letter-spacing: 0.2em;
+	    font-weight: 100;
+	    text-transform: uppercase;
+	}
+	
+	
+	/* Hamburger-menu */
+	/* Making it tabbable start */
+	.nav-hamburger {
+	    position: absolute !important;
+	    top: -9999px !important;
+	    left: -9999px !important;
+	}
+	
+	.nav-hamburger:focus ~ .nav-hamburger-label {
+	    outline: 3px solid rgb(white, 0.75em);
+	}
+	
+	.nav-hamburger-label {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    margin-right: 2em;
+	    height: 100%;
+	    display: flex;
+	    align-items: center;
+	}
+	
+	.nav-hamburger-label span {
+	    text-transform: uppercase;
+	    color: black;
+	    font-size: 0.9em;
+	    letter-spacing: 0.2em;
+	    font-weight: 100;
+	}
+	
+	.nav-hamburger-label:hover{
+	    cursor: pointer;
+	}
+	
+	/*
+	.nav-hamburger-label span,
+	.nav-hamburger-label span::before,
+	.nav-hamburger-label span::after {
+	    display: block;
+	    background: black;
+	    height: 1px;
+	    width: 2em;
+	    border-radius: 2px;
+	    position: relative;   
+	}
+	
+	.nav-hamburger-label span::before,
+	.nav-hamburger-label span::after {
+	    content: '';
+	    position: absolute;
+	}
+	
+	.nav-hamburger-label span::before {
+	    bottom: 0.6em;
+	}
+	
+	.nav-hamburger-label span::after {
+	    top: 0.6em;
+	}
+	*/
+	
+	nav {
+	    background-color: white;
+	    position: absolute;
+	    text-align: right;
+	    top: 100%;
+	    left: 0;
+	    width: 100%;
+	    transform: scale(1, 0);
+	    transform-origin: top;
+	    transition: transform 400ms ease-in-out;
+	}
+	
+	nav ul {
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+	}
+	
+	nav li {
+	    margin-bottom: 1em;
+	    margin-right: 2em;
+	}
+	
+	nav a {
+	    color: black;
+	    text-decoration: none;
+	    font-size: 0.7em;
+	    text-transform: uppercase;
+	    letter-spacing: 0.2em;
+	    font-weight: 100;
+	    opacity: 0;
+	    transition: opacity 150ms ease-in-out;
+	    padding: 0.6em;
+	}
+	
+	nav a:hover {
+	    border-radius: 4px;
+	    background-color: rgba(50, 86, 93, 0.096) ;
+	    color: rgb(0, 0, 0);
+	}
+	
+	.nav-hamburger:checked ~ nav {
+	    transform: scale(1, 1);
+	}
+	
+	.nav-hamburger:checked ~ nav a {
+	    opacity: 1;
+	    transition: opacity 250ms ease-in-out 250ms;
+	}
+
+
+/* <-- Content Block Stuff --> */
+	.contentBlock h1{
 		text-align: center;
 		padding-bottom: 15px;
 		border-bottom: solid 3px #00866E;
@@ -17,20 +159,17 @@
 		margin: auto;
 		margin-bottom: 20px;
 	}
-	p{
+	.contentBlock p{
 		font-size: 19px;
 		line-height: 1.5em;
 	}
-	img{
+	.contentBlock img{
 		max-width: 100%;
 	}
 	#content{
 		width: 70%;
 		margin: auto;
 	}
-
-
-/* <-- Content Block Stuff --> */
 	.contentBlock{
 		margin: 20px 0;
 		margin-bottom: 70px;
