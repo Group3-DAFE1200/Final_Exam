@@ -148,8 +148,7 @@
 	    transition: opacity 250ms ease-in-out 250ms;
 	}
 
-
-/* <-- Content Block Stuff --> */
+/* FRONT PAGE EXCLUSIVE */
 	#frontPageImage{
 		background-image: url("Pictures/frontPageImage.jpg");
 		height: 250px;
@@ -158,6 +157,11 @@
 		background-size: cover;
 		background-position: center;
 	}
+	#contactBlock{
+		text-align: center;
+	}
+
+/* <-- Content Block Stuff --> */
 	#content{
 		width: 70%;
 		margin: auto;
@@ -185,12 +189,7 @@
 	.contentBlock img{
 		max-width: 100%;
 	}
-
-	/* -Usikker på om det her e en god ide*/
-	#contactBlock{
-		text-align: center;
-	}
-	.cellRow{
+	.verticalAlignCenter{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -223,16 +222,14 @@
 		#frontPageImage{
 			height: 335px;
 		}
-		.flexRowOver800Px{
+		.flexRow_Over800px{
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-
 		}
-		.width48{
+		.width48_Over800px{
 			width: 48%;
 		}
-
 	}
 
 	@media screen and (min-width: 1300px){
@@ -250,19 +247,5 @@
 		}
 		.linkButton{
 			font-size: 19px;
-		}
-		.halfText_halfImage{
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-
-		}
-		.width48{
-			width: 48%;
-		}
-		.cellRow{
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
 		}
 	}
