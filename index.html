@@ -5,22 +5,27 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
+
+	<!-- NAV BAR -->
 	<header>
-    <h1 class="logo"><a href="index.html">Logo</a></h1>
-    <input type="checkbox" id="nav-hamburger" class="nav-hamburger">
-    <nav>
-        <ul>
-            <li><a href="#">Problem</a></li>
-            <li><a href="#">Solution</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact us</a></li>
-        </ul>
-    </nav>
-    <label for="nav-hamburger" class="nav-hamburger-label">
-        <span>Menu</span>
-    </label>
-</header>
+    	<h1 class="logo"><a href="index.html">Logo</a></h1>
+    	<input type="checkbox" id="nav-hamburger" class="nav-hamburger">
+   		<nav>
+       		<ul>
+       	    	<li><a href="#">Problem</a></li>
+    	        <li><a href="#">Solution</a></li>
+    	        <li><a href="#">About us</a></li>
+    	        <li><a href="#">Contact us</a></li>
+    	    </ul>
+    	</nav>
+    	<label for="nav-hamburger" class="nav-hamburger-label">
+    	    <span>Menu</span>
+    	</label>
+	</header>
+
+	<!-- MAIN CONTENT -->
 	<main>
+		<div id="frontPageImage"></div>
 		<div id="content">
 
 			<div class="contentBlock">
@@ -32,18 +37,28 @@
 
 			<div class="contentBlock">
 				<h1>That is why we made NAME.</h1>
-				<img src="test.jpeg">
-				<p>Saving our planet is one of the toughest missions our species has had to overcome.</p>
-				<p>Unfortunately human curiousity is a huge obstacle to this mission as travel equates for x% of all CO2 emissions.</p>
-				<a href="#" class="linkButton"><div>Read more about the solution</div></a>
+				<div class="flexRowOver800Px">
+					<div class="cellRow width48">
+						<img src="Pictures/test.jpeg">
+					</div>
+					<div class="cellRow width48">
+						<p>Saving our planet is one of the toughest missions our species has had to overcome.</p>
+						<p>Unfortunately human curiousity is a huge obstacle to this mission as travel equates for x% of all CO2 emissions.</p>
+						<a href="#" class="linkButton"><div>Read more about the solution</div></a>
+					</div>
+				</div>
 			</div>
 
 			<div class="contentBlock">
 				<h1>That is why we made NAME.</h1>
-				<img src="test.jpeg">
-				<p>Saving our planet is one of the toughest missions our species has had to overcome.</p>
-				<p>Unfortunately human curiousity is a huge obstacle to this mission as travel equates for x% of all CO2 emissions.</p>
-				<a href="#" class="linkButton"><div >Read more about us</div></a>
+				<div class="flexRowOver800Px">
+					<div class="cellRow width48"><img src="Pictures/test.jpeg"></div>
+					<div class="cellRow width48">
+						<p>Saving our planet is one of the toughest missions our species has had to overcome.</p>
+						<p>Unfortunately human curiousity is a huge obstacle to this mission as travel equates for x% of all CO2 emissions.</p>
+						<a href="#" class="linkButton"><div >Read more about us</div></a>
+					</div>
+				</div>
 			</div>
 
 			<div id="contactBlock" class="contentBlock">
@@ -53,5 +68,10 @@
 
 		</div>
 	</main>
+
+	<!-- FOOTER -->
+	<footer>
+		
+	</footer>
 </body>
 </html>

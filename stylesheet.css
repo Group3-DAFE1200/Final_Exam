@@ -6,7 +6,7 @@
 		font-family: arial;
 	}
 	main{
-		margin-top: 100px;
+		margin-top: 80px;
 	}
 
 
@@ -150,56 +150,51 @@
 
 
 /* <-- Content Block Stuff --> */
+	#frontPageImage{
+		background-image: url("Pictures/frontPageImage.jpg");
+		height: 250px;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
 	#content{
 		width: 70%;
 		margin: auto;
-	}
-	.contentBlock h1{
-		text-align: center;
-		padding-bottom: 15px;
-		border-bottom: solid 3px #00866E;
-		font-size: 28px;
-		width: 80%;
-		margin: auto;
-		margin-bottom: 20px;
-	}
-	.contentBlock p{
-		font-size: 19px;
-		line-height: 1.5em;
-	}
-	.contentBlock img{
-		max-width: 100%;
+		position: relative;
+		top: 40px;
 	}
 	.contentBlock{
 		margin: 20px 0;
 		margin-bottom: 70px;
 	}
+	.contentBlock h1{
+		text-align: center;
+		padding-bottom: 15px;
+		border-bottom: solid 3px #00866E;
+		font-size: 26px;
+		width: 80%;
+		margin: auto;
+		margin-bottom: 30px;
+	}
+	.contentBlock p{
+		font-size: 19px;
+		line-height: 1.5em;
+		letter-spacing: 0.03em;
+	}
+	.contentBlock img{
+		max-width: 100%;
+	}
 
 	/* -Usikker på om det her e en god ide*/
-	.flexRow, .flexColumn{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-	}
-	.flexRow{
-		flex-direction: row;
-	}
-	.flexColumn{
-		flex-direction: column;
-	}
-	.cellRow img{
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-	}
-	.cellRow{
-		width: 45%;
-		min-width: 350px;
-	}
 	#contactBlock{
 		text-align: center;
 	}
-
+	.cellRow{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 
 /* <-- Button --> */
 	.linkButton div{
@@ -221,4 +216,53 @@
 	.linkButton div:hover:after{
 		margin-left: 12px;
 		transition: margin-left 0.2s;
+	}
+
+/* <-- Responsiveness -->*/
+	@media screen and (min-width: 800px){
+		#frontPageImage{
+			height: 335px;
+		}
+		.flexRowOver800Px{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+		}
+		.width48{
+			width: 48%;
+		}
+
+	}
+
+	@media screen and (min-width: 1300px){
+		#frontPageImage{
+			height: 600px;
+		}
+		#content{
+			width: 55%;
+		}
+		.contentBlock p{
+			font-size: 21px;
+		}
+		.contentBlock h1{
+			font-size: 30px;
+		}
+		.linkButton{
+			font-size: 19px;
+		}
+		.halfText_halfImage{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+		}
+		.width48{
+			width: 48%;
+		}
+		.cellRow{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
 	}
