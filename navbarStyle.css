@@ -3,6 +3,8 @@ body {
 }
 
 /* NAVIGATION BAR AND LOGO */
+/* Teaching source: Powell, K. (May 16th 2018). Create a responsive navigation with no JS! [video].
+   Found at https://www.youtube.com/watch?v=8QKOaTYvYUA&feature=emb_logo */
 header {
     background-color: white;
     text-align: center;
