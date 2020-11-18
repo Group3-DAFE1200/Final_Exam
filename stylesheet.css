@@ -1,44 +1,49 @@
+/* <-- Variables --> */
+:root{
+	--background-Color: rgba(255,252,242,1);
+	--accent-Color: rgb(195,149,68);
+	--accent-Color-2: rgb(23,86,45);
+	--text:rgb(0,35,7);
+}
+
 /* <-- Global --> */
 	body{
-		background-color: #E6F3F1;
-		padding:0;
+		background-color: var(--background-Color);
+		padding: 0;
 		margin: 0;
-		font-family: arial;
+		font-family: Arial, Helvetica, sans-serif;
+		color: var(--text);
 	}
 	main{
 		margin-top: 80px;
 	}
-
+	a{
+		color: var(--accent-Color-2);
+		text-decoration: none;
+	}
 
 /* NAVIGATION BAR AND LOGO */
+/* Teaching source: Powell, K. (May 16th 2018). Create a responsive navigation with no JS! [video].
+   Found at https://www.youtube.com/watch?v=8QKOaTYvYUA&feature=emb_logo */
 	header {
-	    background-color: white;
+	    background-color: var(--background-Color);;
 	    text-align: center;
 	    position: fixed;
 	    z-index: 999;
-	    width: 100%;
 	    top: 0;
+	    width: 100%;
 	}
 	
 	.logo {
 	    position: relative;
-	    bottom: 0.2em;
+	    top: 0em;
 	    text-align: left;
-	    margin-left: 0.6em;
+	    margin-left: 0.8em;
+	    margin-top: 5px;
+	    margin-bottom: 0px;
 	}
-	
-	.logo a {
-	    text-decoration: none;
-	    color: black;
-	    font-size: 0.45em;
-	    letter-spacing: 0.2em;
-	    font-weight: 100;
-	    text-transform: uppercase;
-	}
-	
 	
 	/* Hamburger-menu */
-	/* Making it tabbable start */
 	.nav-hamburger {
 	    position: absolute !important;
 	    top: -9999px !important;
@@ -53,16 +58,18 @@
 	    position: absolute;
 	    top: 0;
 	    right: 0;
-	    margin-right: 2em;
+	    margin-right: 2.5em;
 	    height: 100%;
 	    display: flex;
 	    align-items: center;
 	}
 	
 	.nav-hamburger-label span {
+	    position: relative;
+	    top: 0.3em;
 	    text-transform: uppercase;
 	    color: black;
-	    font-size: 0.9em;
+	    font-size: 1em;
 	    letter-spacing: 0.2em;
 	    font-weight: 100;
 	}
@@ -71,43 +78,17 @@
 	    cursor: pointer;
 	}
 	
-	/*
-	.nav-hamburger-label span,
-	.nav-hamburger-label span::before,
-	.nav-hamburger-label span::after {
-	    display: block;
-	    background: black;
-	    height: 1px;
-	    width: 2em;
-	    border-radius: 2px;
-	    position: relative;   
-	}
-	
-	.nav-hamburger-label span::before,
-	.nav-hamburger-label span::after {
-	    content: '';
-	    position: absolute;
-	}
-	
-	.nav-hamburger-label span::before {
-	    bottom: 0.6em;
-	}
-	
-	.nav-hamburger-label span::after {
-	    top: 0.6em;
-	}
-	*/
-	
 	nav {
 	    background-color: white;
 	    position: absolute;
 	    text-align: right;
 	    top: 100%;
-	    left: 0;
-	    width: 100%;
+	    right: 0;
+	    width: 80%;
 	    transform: scale(1, 0);
 	    transform-origin: top;
 	    transition: transform 400ms ease-in-out;
+	    z-index: 0;
 	}
 	
 	nav ul {
@@ -123,8 +104,9 @@
 	
 	nav a {
 	    color: black;
+	    z-index: 0;
 	    text-decoration: none;
-	    font-size: 0.7em;
+	    font-size: 0.9em;
 	    text-transform: uppercase;
 	    letter-spacing: 0.2em;
 	    font-weight: 100;
@@ -148,9 +130,64 @@
 	    transition: opacity 250ms ease-in-out 250ms;
 	}
 
+/* RESPONSIVE RULES */  
+	@media screen and (min-width: 800px) {
+	/* Navigation and logo ipad */
+	    .logo {
+	        top: 0.1em;
+	        margin-left: 1em;
+	    }
+	
+	    .logo a {
+	        font-size: 0.78em;
+	    }
+	
+	    .nav-hamburger-label {
+	        display: none;
+	    }
+	
+	    nav {
+	    position: fixed;
+	    transition: none;
+	    transform: scale(1,1);
+	    background: none;
+	    top: 2.5em;
+	    display: flex;
+	    justify-content: flex-end;
+	    }
+	
+	    nav ul {
+	        margin-right: 0.5em;
+	        display: flex;
+	    }
+	
+	    nav a {
+	        opacity: 1;
+	        font-size: 0.9em;
+	        padding: 0.5em;
+	        }
+	    }
+	    
+	    @media screen and (min-width: 1300px){
+	        /* Navigation and logo desktop */
+	        .logo {
+	            margin-left: 2.5em;
+	        }
+	    
+	        .logo a {
+	            font-size: 0.9em;
+	        }
+	
+	        nav a {
+	            margin-right: 2.5em;
+	            font-size: 1em;
+	            }
+	    }
+
+
 /* FRONT PAGE EXCLUSIVE */
 	#frontPageImage{
-		background-image: url("Pictures/frontPageImage.jpg");
+		background-image: url("Pictures/pexels-archie-binamira-672358.jpg");
 		height: 250px;
 		width: 100%;
 		background-repeat: no-repeat;
@@ -175,7 +212,7 @@
 	.contentBlock h1{
 		text-align: center;
 		padding-bottom: 15px;
-		border-bottom: solid 3px #00866E;
+		border-bottom: solid 3px var(--accent-Color);
 		font-size: 26px;
 		width: 80%;
 		margin: auto;
@@ -194,18 +231,57 @@
 		flex-direction: column;
 		justify-content: center;
 	}
+	.flexRow{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 40px;
+	}
+	.flexRow img{
+		margin-top: 20px;
+	}
+	.flexRow p{
+		margin: 0; 
+		margin-top:10px;
+		margin-bottom: 10px;
+	}
+	.width30{
+		width: 100%;
+	}
+	.flexColumn{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+/* PROBLEM PAGE */
+	.noWrap{
+		flex-wrap: nowrap;
+	}
+	.goalColor{	}
+	#goalImg{
+		width: 600px;
+		height: 100px;
+		margin-right: 20px;
+		position: relative;
+		top:20px;
+	}
+
 
 /* <-- Button --> */
 	.linkButton div{
 		display: inline-block;
 		padding: 10px;
-		background-color: #00866E;
+		background-color: var(--accent-Color);
 		border-radius:2px;
 	
 		margin-top: 10px;
 	
 		text-decoration: none;
 		color: white;
+
+		transition: background-color 0.5s;
 	}
 	.linkButton div:after{
 		content: "\2192";
@@ -215,6 +291,10 @@
 	.linkButton div:hover:after{
 		margin-left: 12px;
 		transition: margin-left 0.2s;
+	}
+	.linkButton div:hover{
+		background-color: var(--accent-Color-2);
+		transition: background-color 0.5s;
 	}
 
 /* <-- Responsiveness -->*/
@@ -230,6 +310,15 @@
 		.width48_Over800px{
 			width: 48%;
 		}
+		.width30{
+			width: 350px;
+		}
+	}
+
+	@media screen and (max-width: 1018px){
+		.width30{
+			width: 100%;
+		}
 	}
 
 	@media screen and (min-width: 1300px){
@@ -237,7 +326,7 @@
 			height: 600px;
 		}
 		#content{
-			width: 55%;
+			width: 65%;
 		}
 		.contentBlock p{
 			font-size: 21px;
@@ -247,5 +336,8 @@
 		}
 		.linkButton{
 			font-size: 19px;
+		}
+		.width30{
+			width: 418px;
 		}
 	}
