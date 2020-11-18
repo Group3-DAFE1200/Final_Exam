@@ -1,7 +1,9 @@
 /* <-- Variables --> */
 :root{
-	--background-Color: #E6F3F1;
-	--accent-Color: #00866E;
+	--background-Color: rgba(255,252,242,1);
+	--accent-Color: rgb(195,149,68);
+	--accent-Color-2: rgb(23,86,45);
+	--text:rgb(0,35,7);
 }
 
 /* <-- Global --> */
@@ -10,16 +12,21 @@
 		padding: 0;
 		margin: 0;
 		font-family: Arial, Helvetica, sans-serif;
+		color: var(--text);
 	}
 	main{
 		margin-top: 80px;
+	}
+	a{
+		color: var(--accent-Color-2);
+		text-decoration: none;
 	}
 
 /* NAVIGATION BAR AND LOGO */
 /* Teaching source: Powell, K. (May 16th 2018). Create a responsive navigation with no JS! [video].
    Found at https://www.youtube.com/watch?v=8QKOaTYvYUA&feature=emb_logo */
 header {
-    background-color: white;
+    background-color: var(--background-Color);;
     text-align: center;
     position: fixed;
     z-index: 999;
@@ -186,7 +193,7 @@ nav a:hover {
 
 /* FRONT PAGE EXCLUSIVE */
 	#frontPageImage{
-		background-image: url("Pictures/frontPageImage.jpg");
+		background-image: url("Pictures/pexels-archie-binamira-672358.jpg");
 		height: 250px;
 		width: 100%;
 		background-repeat: no-repeat;
