@@ -42,6 +42,10 @@
 	    margin-top: 5px;
 	    margin-bottom: 0px;
 	}
+
+    .position{
+        border-bottom: solid 2px var(--accent-Color);
+    }
 	
 	/* Hamburger-menu */
 	.nav-hamburger {
@@ -119,6 +123,7 @@
 	    border-radius: 4px;
 	    background-color: rgba(50, 86, 93, 0.096) ;
 	    color: rgb(0, 0, 0);
+        font-weight: bold;
 	}
 	
 	.nav-hamburger:checked ~ nav {
@@ -184,7 +189,6 @@
 	            }
 	    }
 
-
 /* FRONT PAGE EXCLUSIVE */
 	#frontPageImage{
 		background-image: url("Pictures/pexels-archie-binamira-672358.jpg");
@@ -199,6 +203,9 @@
 	}
 
 /* <-- Content Block Stuff --> */
+.textCenter{
+    text-align: center;
+}
 	#content{
 		width: 70%;
 		margin: auto;
@@ -236,17 +243,13 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin-top: 40px;
-	}
-	.flexRow img{
-		margin-top: 20px;
 	}
 	.flexRow p{
 		margin: 0; 
 		margin-top:10px;
 		margin-bottom: 10px;
 	}
-	.width30{
+	.widthAboutUs{
 		width: 100%;
 	}
 	.flexColumn{
@@ -261,13 +264,72 @@
 	}
 	
 	#goalImg{
-		width: 600px;
-		height: 100px;
+		width: 150px;
 		margin-right: 20px;
 		position: relative;
 		top:20px;
+        margin-bottom: 15px;
+
 	}
 
+/* CONTACT US  */
+    .contactForm{
+        text-align: center;
+    }
+    #formContent{
+        width: 70%;
+        margin: auto;
+        margin-top: 60px;
+    }
+    #formContent input[type=text]{
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+    #formContent label{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .formPairing{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .formRow{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+    #centerButton{
+        display: flex;
+        justify-content: center;
+    }
+    .submit{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: var(--accent-Color);
+        border-radius:2px;
+        border: none;
+    
+        margin-top: 18px;
+    
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+
+        transition: background-color 0.5s;
+    }
+    .submit:hover{
+        background-color: var(--accent-Color-2);
+        transition: background-color 0.5s;
+
+        cursor: pointer;
+    }
+    #message{
+        width: 70%;
+        margin:auto;
+    }
 
 /* <-- Button --> */
 	.linkButton div{
@@ -310,13 +372,19 @@
 		.width48_Over800px{
 			width: 48%;
 		}
-		.width30{
+		.widthAboutUs{
 			width: 350px;
 		}
+        #goalImg{
+            width: 600px;
+        }
+        #formContent input[type=text]{
+            width: 100%;
+        }
 	}
 
 	@media screen and (max-width: 1018px){
-		.width30{
+		.widthAboutUs{
 			width: 100%;
 		}
 	}
@@ -337,7 +405,19 @@
 		.linkButton{
 			font-size: 19px;
 		}
-		.width30{
+		.widthAboutUs{
 			width: 418px;
 		}
+        #goalImg{
+            width: 400px;
+        }
+        #formContent input[type=text]{
+            width: 260px;
+        }
 	}
+
+    @media screen and (min-width: 1940px){
+        .widthAboutUs{
+            width: 550px;
+        }
+    }

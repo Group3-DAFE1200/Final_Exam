@@ -16,7 +16,7 @@
             	<li><a href="problem.html">Problem</a></li>
             	<li><a href="solution.html">Solution</a></li>
             	<li><a href="aboutUs.html">About us</a></li>
-            	<li><a href="contactUs.html">Contact us</a></li>
+            	<li><a href="contactUs.html" class="position">Contact us</a></li>
         	</ul>
     	</nav>
     	<label for="nav-hamburger" class="nav-hamburger-label">
@@ -37,24 +37,38 @@
 						and we will get in touch with you shortly.</p>
 
 					<!-- Name -->
-					<div class="formContent">
-							<label for="firstName">First Name:</label><br>
-							<input type="text" name="firstName-field" id="firstName"><br>
-							<label for="lastName">Last Name:</label><br>
-							<input type="text" name="lastnName-field" id="lastName"><br>
+					<div id="formContent">
+							<div class="formRow">
+								<div class="formPairing">
+									<label for="firstName">First Name:</label>
+									<input type="text" name="firstName-field" id="firstName">
+								</div>
+								<div class="formPairing">
+									<label for="lastName">Last Name:</label>
+									<input type="text" name="lastnName-field" id="lastName">
+								</div>
+							</div>
 
 						<!-- Contact -->
-							<label for="email">E-mail:</label><br>
-							<input type="text" name="email-field" id="email"><br>
-							<label for="phone">Phone:</label><br>
-							<input type="text" name="phone" id="phone"><br>
+							<div class="formRow">
+								<div class="formPairing">
+									<label for="email">E-mail:</label>
+									<input type="text" name="email-field" id="email">
+								</div>
+								<div class="formPairing">
+									<label for="phone">Phone:</label>
+									<input type="text" name="phone" id="phone">
+								</div>
+							</div>
 						
 						<!-- Message -->
-							<label class="textareaLabel" for="message">Message:</label><br>
-							<textarea name="message-field" id="message" rows="10" cols="20"></textarea><br>
+							<div class="formPairing">
+								<label class="textareaLabel" for="message">Message:</label>
+								<textarea name="message-field" id="message" rows="10" cols="20"></textarea>
+							</div>
 
 						<!-- Submit -->
-						<input class="submit" type="submit" value="Submit">
+						<div id="centerButton"><input class="submit" type="submit" value="Submit &rarr;"></div>
 					</div>
 				</form>
 			</div>
