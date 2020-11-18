@@ -25,14 +25,52 @@
 
 	<!-- MAIN CONTENT -->
 	<main>
-		<div id="content">
 
-			<div class="contentBlock">
-				<h1>Title</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus risus leo, at suscipit nunc porttitor at. Nunc vestibulum ornare aliquam. Vivamus convallis nulla non arcu laoreet dictum. Suspendisse iaculis ut sapien in laoreet. Nunc quis sodales sem. Donec sed pharetra diam. Curabitur egestas imperdiet scelerisque. In in arcu non justo tempus blandit. Donec non fermentum ex. Nunc pretium ipsum ut ante volutpat, nec tempor ipsum sodales. Nam ex est, sollicitudin eu dui in, porttitor pharetra urna. Pellentesque aliquet luctus sem, vel commodo nulla viverra ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin nec ipsum nec mi vulputate semper. Aliquam erat volutpat. Aliquam ullamcorper nibh ut sapien lacinia tempor.</p>
+		<!-- Contact form -->
+		<form class="contactForm" action="submitPage.html">
+			<h1>Contact Us</h1>
+			<p>We would love to hear from you. Leave a message below 
+				and we will get in touch with you shortly.</p>
+
+			<!-- Name -->
+			<div class="formContent">
+					<label for="firstName">First Name:</label><br>
+					<input type="text" name="firstName-field" id="firstName"><br>
+					<label for="lastName">Last Name:</label><br>
+					<input type="text" name="lastnName-field" id="lastName"><br>
+
+				<!-- Contact -->
+					<label for="email">E-mail:</label><br>
+					<input type="text" name="email-field" id="email"><br>
+					<label for="phone">Phone:</label><br>
+					<input type="text" name="phone" id="phone"><br>
+				
+
+				<!-- Choices -->
+				<span>Contact us as:</span>
+				<div class="formRadio">
+					<label for="contactEmail">Paricipant</label><br>
+					<div class="radioInput">
+						<input type="radio" name="contact" id="contactParticipant" value="paricipant"><br>
+					</div>
+					<label for="contactPhone">Potential clients</label><br>
+					<div class="radioInput">
+					<input type="radio" name="contact" id="contactClients" value="clients"><br>
+					</div>
+					<label for="contactPhone">Other</label><br>
+					<div class="radioInput">
+						<input type="radio" name="contact" id="contactOther" value="other"><br>
+					</div>
+				</div>
+				
+				<!-- Message -->
+					<label class="textareaLabel" for="message">Message:</label><br>
+					<textarea name="message-field" id="message" rows="10" cols="20"></textarea><br>
+
+				<!-- Submit -->
+				<input class="submit" type="submit" value="Submit">
 			</div>
-
-		</div>
+		</form>
 	</main>
 
 	<!-- FOOTER -->
