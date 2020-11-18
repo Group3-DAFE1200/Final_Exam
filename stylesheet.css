@@ -200,15 +200,16 @@
 
 /* FOOTER */
     footer{
-        border-top: var(--accent-Color) solid 1px;
-        width: 100%;
-        margin-top: 40px;
+		background-color: var(--accent-Color);
+		/* border-top: var(--accent-Color) solid 1px;
+		width: 100%;
+        margin-top: 60px;
         margin: auto;
-        padding: 20px;
+        padding: 10px;
         padding-top: 15px;
         text-align: center;
-        position: fixed;
-        bottom: 0;
+		bottom: 0;
+		position: relative; */
     }
 
 /* FRONT PAGE EXCLUSIVE */
@@ -380,20 +381,6 @@
 		background-color: var(--accent-Color-2);
 		transition: background-color 0.5s;
 	}
-
-/* <-- Footer --> */
-
-	footer{
-		position: relative;
-		text-align: center;
-		margin-bottom: 0;
-		background-color: var(--accent-Color);
-	}
-
-	/*footer span{
-		margin-left: 2em;
-		background-color: var(--accent-Color);
-	} */
 
 /* <-- Responsiveness -->*/
 	@media screen and (min-width: 800px){
