@@ -51,7 +51,7 @@
 	}
 	
 	.nav-hamburger:focus ~ .nav-hamburger-label {
-	    outline: 3px solid rgb(white, 0.75em);
+	    outline: 1px solid var(--background-Color);
 	}
 	
 	.nav-hamburger-label {
@@ -79,7 +79,7 @@
 	}
 	
 	nav {
-	    background-color: white;
+	    background-color: var(--background-Color);
 	    position: absolute;
 	    text-align: right;
 	    top: 100%;
