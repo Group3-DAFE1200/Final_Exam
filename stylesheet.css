@@ -4,6 +4,15 @@
 	--accent-Color: rgb(195,149,68);
 	--accent-Color-2: rgb(23,86,45);
 	--text:rgb(0,35,7);
+    --light-Green:rgb(201, 217, 196);
+    --moss-Green:rgb(12, 66, 31);
+    /*
+    Mosegrønn: 12, 66, 31, 1
+    Tekstgrønn: 1, 55, 12, 1
+    Bakgrunnsbeige: 255, 252, 242, 1
+    Lys mosegrønn: 201, 217, 196, 1
+    Lys kobber: 195, 149, 68, 1
+    */
 }
 
 /* <-- Global --> */
@@ -188,6 +197,19 @@
 	            font-size: 1em;
 	            }
 	    }
+
+/* FOOTER */
+    footer{
+        border-top: var(--accent-Color) solid 1px;
+        width: 100%;
+        margin-top: 40px;
+        margin: auto;
+        padding: 20px;
+        padding-top: 15px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+    }
 
 /* FRONT PAGE EXCLUSIVE */
 	#frontPageImage{
