@@ -240,10 +240,6 @@
 	    font-weight: 100;
 	}
 
-.contentBlock sup{
-	font-size: 0.5em;
-}
-
 /* FRONT PAGE EXCLUSIVE */
 	#frontPageImage{
 		background-image: url("Pictures/pexels-archie-binamira-672358.jpg");
@@ -324,7 +320,10 @@
 		position: relative;
 		top:20px;
         margin-bottom: 15px;
+	}
 
+	.contentBlock sup{
+		font-size: 0.5em;
 	}
 
 /* CONTACT US  */
