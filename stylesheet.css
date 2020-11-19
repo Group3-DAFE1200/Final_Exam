@@ -336,12 +336,12 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
-		margin: 0 2em 2em;
+		margin: 0 1em 1em;
 	}
 
 	.appBlock p{
 		width: 50%;
-		padding: 2em;
+		padding: 0.5em;
 		font-size: 14px;
 		line-height: 1.5em;
 		letter-spacing: 0.03em;
@@ -353,7 +353,7 @@
 
 	.appBlock img{
 		width: 30%;
-		padding: 2em;
+		padding: 2em 0.5em 2em; 
 	}
 
 	.appBlockNewSection{
