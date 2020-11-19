@@ -327,17 +327,14 @@
 	}
 
 /*SOLUTION PAGE*/
-	.appBlockTitle{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		padding-top: 2em;
+
+	#appContent{
+		position: relative;
+		top: 40px;
 	}
 
-	.appBlockTitle img{
-		width: 10%;
-		margin-right: 2em;
+	#appContent h1{
+		width: 55%;
 	}
 
 	.appBlock{
@@ -345,13 +342,13 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
-		margin: 2em;
+		margin: 0 2em 2em;
 	}
 
 	.appBlock p{
 		width: 50%;
 		padding: 2em;
-		font-size: 19px;
+		font-size: 14px;
 		line-height: 1.5em;
 		letter-spacing: 0.03em;
 	}
@@ -361,7 +358,7 @@
 	}
 
 	.appBlock img{
-		width: 15%;
+		width: 30%;
 		padding: 2em;
 	}
 
@@ -385,6 +382,10 @@
 		font-size: 19px;
 		line-height: 1.5em;
 		letter-spacing: 0.03em;
+	}
+
+	.appFinalImage{
+		margin-bottom: 2em;
 	}
 
 /* CONTACT US  */
@@ -472,6 +473,28 @@
 	}
 
 /* <-- Responsiveness -->*/
+	@media screen and (min-width: 550px){
+
+		.appBlock p{
+			font-size: 16px;
+			line-height: 1.5em;
+			letter-spacing: 0.03em;
+		}
+	}
+
+	@media screen and (min-width: 700px){
+
+		.appBlock img{
+			width: 25% !important;
+		}
+
+		.appBlock p{
+			font-size: 17px;
+			line-height: 1.5em;
+			letter-spacing: 0.03em;
+		}
+	}
+
 	@media screen and (min-width: 800px){
 		#frontPageImage{
 			height: 335px;
@@ -492,7 +515,20 @@
         }
         #formContent input[type=text]{
             width: 100%;
-        }
+		}
+	}
+
+	@media screen and (min-width: 900px){
+
+		.appBlock img{
+			width: 15% !important;
+		}
+
+		.appBlock p{
+			font-size: 18px;
+			line-height: 1.5em;
+			letter-spacing: 0.03em;
+		}
 	}
 
 	@media screen and (max-width: 1018px){
