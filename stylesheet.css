@@ -253,7 +253,7 @@
 		text-align: center;
 	}
 
-/* <-- Content Block Stuff --> */
+/* <-- Content Block--> */
 .textCenter{
     text-align: center;
 }
@@ -324,6 +324,67 @@
 
 	.contentBlock sup{
 		font-size: 0.5em;
+	}
+
+/*SOLUTION PAGE*/
+	.appBlockTitle{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		padding-top: 2em;
+	}
+
+	.appBlockTitle img{
+		width: 10%;
+		margin-right: 2em;
+	}
+
+	.appBlock{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin: 2em;
+	}
+
+	.appBlock p{
+		width: 50%;
+		padding: 2em;
+		font-size: 19px;
+		line-height: 1.5em;
+		letter-spacing: 0.03em;
+	}
+
+	.appBlock sup{
+		font-size: 0.5em;
+	}
+
+	.appBlock img{
+		width: 15%;
+		padding: 2em;
+	}
+
+	.appBlockNewSection{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin: 2em;
+	}
+
+	#appBlockGreen{
+		background-color: var(--light-Green);
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.appBlockFinal{
+		margin-left: 6em;
+		margin-right: 6em;
+		font-size: 19px;
+		line-height: 1.5em;
+		letter-spacing: 0.03em;
 	}
 
 /* CONTACT US  */
