@@ -145,7 +145,7 @@
 	}
 
 /* RESPONSIVE RULES */  
-	@media screen and (min-width: 800px) {
+	@media screen and (min-width: 870px) {
 	/* Navigation and logo ipad */
 	    .logo {
 	        top: 0.1em;
