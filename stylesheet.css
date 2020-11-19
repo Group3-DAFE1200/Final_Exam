@@ -67,7 +67,7 @@
 	    outline: 1px solid var(--background-Color);
 	}
 	
-	.nav-hamburger-label span {
+	.nav-hamburger-label {
 	    position: absolute;
 	    top: 0;
 	    right: 0;
@@ -77,7 +77,7 @@
 	    align-items: center;
 	}
 	
-	.nav-hamburger-label {
+	.nav-hamburger-label span {
 	    position: relative;
 	    top: 0.3em;
 	    text-transform: uppercase;
