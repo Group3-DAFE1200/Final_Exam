@@ -492,6 +492,7 @@
 	}
 	
     .submit:hover{
+		-webkit-appearance: none;
         background-color: rgb(23,86,45);
         transition: background-color 0.5s;
         cursor: pointer;
