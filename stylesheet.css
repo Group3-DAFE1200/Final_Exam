@@ -569,9 +569,6 @@
         #goalImg{
             width: 400px;
         }
-        #formContent input[type=text]{
-            width: 260px;
-        }
 	}
 
     @media screen and (min-width: 1940px){
