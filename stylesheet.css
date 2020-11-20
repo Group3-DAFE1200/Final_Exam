@@ -27,7 +27,16 @@
 
 /* Internet Explorer */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none){
-
+	.verticalAlignCenter{
+		display: block !important;
+	}
+	main{
+		position: relative;
+		top: 88px;
+	}
+	#content{
+		top:0 !important;
+	}
 }
 
 
