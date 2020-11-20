@@ -18,7 +18,7 @@
 		color: var(--text);
 	}
 	main{
-		margin-top: 80px;
+		margin-top: 88px;
 	}
 	a{
 		color: var(--accent-Color-2);
@@ -511,7 +511,7 @@
 
 	@media screen and (min-width: 800px){
 		#frontPageImage{
-			height: 335px;
+			height: 405px;
 		}
 		.flexRow_Over800px{
 			display: flex;
@@ -569,7 +569,7 @@
 		.linkButton{
 			font-size: 19px;
 		}
-		.widthAboutUs{
+		.widthdthAboutUs{
 			width: 418px;
 		}
         #goalImg{
