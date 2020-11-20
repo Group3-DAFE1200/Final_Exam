@@ -519,6 +519,13 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		transition: background-color 0.5s;
 	}
 
+	/* SOURCES */
+	#navSources {
+		display: flex;
+		flex-direction: column;
+	}
+	
+
 /* <-- Responsiveness -->*/
 	@media screen and (min-width: 550px){
 
@@ -582,7 +589,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 			padding-left: 1em;
 			padding-right: 1em;
 		}
-		
+
 		#navSources {
 			display: flex;
 			flex-direction: row;
