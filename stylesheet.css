@@ -519,6 +519,11 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		transition: background-color 0.5s;
 	}
 
+	#navSources {
+		display: flex;
+		flex-direction: column;
+	}
+
 /* <-- Responsiveness -->*/
 	@media screen and (min-width: 550px){
 
