@@ -50,6 +50,10 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		#aboutUsImg{
 			max-width: 25em;
 		}
+
+		.contentBlock sup{
+			font-size: 1em;
+		}
 	}
 
 /* NAVIGATION BAR AND LOGO */
