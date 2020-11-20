@@ -26,28 +26,30 @@
 /*Source: Paper Leaf. (September 22nd, 2014). Targeting IE10 & IE11 Browsers with CSS.
 Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none){
-	.verticalAlignCenter{
-		display: block !important;
-	}
-	main{
-		position: relative;
-		top: 88px;
-	}
-	#content{
-		top:0 !important;
-	}
+		.verticalAlignCenter{
+			display: block !important;
+		}
+
+		main{
+			position: relative;
+			top: 88px;
+		}
+
+		#content{
+			top:0 !important;
+		}
 		
-	.contentBlock img{
-		max-width: 30em;
-	}
+		.contentBlock img{
+			max-width: 30em;
+		}
 
-	#problemImg{
-		max-width: 100%;
-	}
+		#problemImg{
+			max-width: 100%;
+		}
 
-	#aboutUsImg{
-		max-width: 25em;
-	}
+		#aboutUsImg{
+			max-width: 25em;
+		}
 	}
 
 /* NAVIGATION BAR AND LOGO */
@@ -431,7 +433,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	.linkButton div{
 		display: inline-block;
 		padding: 10px;
-		background-color: rgb(148, 98, 12, 1);
+		background-color: rgb(148, 98, 12);
 		border-radius:2px;
 		margin-top: 10px;
 		text-decoration: none;
