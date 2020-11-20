@@ -21,12 +21,12 @@
 		margin-top: 88px;
 	}
 	a{
-		color: rgb(23,86,45);
+		color: rgb(148, 98, 12);
 		text-decoration: none;
 	}
 
 	a:hover{
-		color: rgb(0,35,7);
+		color: rgb(23,86,45);
 	}
 
 /*Fix index content for IE11*/
@@ -55,10 +55,6 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	#aboutUsImg{
 		max-width: 25em;
 	}
-
-	.appFinalImage{
-		max-width: 100%;
-	}
 }
 
 
@@ -84,7 +80,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	}
 
     .position{
-        border-bottom: solid 2px rgb(195,149,68);
+        border-bottom: solid 2px rgb(148, 98, 12);
     }
 	
 	/* Hamburger-menu */
@@ -161,6 +157,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	
 	nav a:hover {
 	    border-radius: 4px;
+	    /*background-color: rgba(50, 86, 93, 0.096); */
 	    color: rgb(0, 0, 0);
         font-weight: bold;
 	}
@@ -300,7 +297,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	.contentBlock h1{
 		text-align: center;
 		padding-bottom: 15px;
-		border-bottom: solid 3px rgb(195,149,68);
+		border-bottom: solid 3px rgb(148, 98, 12);
 		font-size: 26px;
 		width: 80%;
 		margin: auto;
@@ -433,7 +430,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
         padding: 5px;
 		margin-bottom: 15px;
 		background-color: rgb(255,253,247);
-		border: solid 1px rgb(195,149,68);
+		border: solid 1px rgb(148, 98, 12);
 		border-radius: 2px;
 		color: rgb(0,35,7);
 		height: 2em;
@@ -469,7 +466,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		appearance: none;
         display: inline-block;
         padding: 10px 20px;
-        background-color: rgb(195,149,68);
+        background-color: rgb(148, 98, 12);
         border-radius:2px;
         border: none;
         margin-top: 18px;
@@ -489,7 +486,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
         width: 100%;
 		margin:auto;
 		background-color: rgb(255,253,247);
-		border: solid 1px rgb(195,149,68);
+		border: solid 1px rgb(148, 98, 12);
 		border-radius: 2px;
 		color: rgb(0,35,7);
 	}
@@ -521,13 +518,6 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		background-color: rgb(23,86,45);
 		transition: background-color 0.5s;
 	}
-
-	/* SOURCES */
-	#navSources {
-		display: flex;
-		flex-direction: column;
-	}
-	
 
 /* <-- Responsiveness -->*/
 	@media screen and (min-width: 550px){
@@ -561,7 +551,6 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		#navSources a {
 			padding-right: 1.2em;
 		}
-
 	}
 
 	@media screen and (min-width: 800px){
@@ -600,14 +589,6 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 			padding-left: 1em;
 			padding-right: 1em;
 		}
-
-		#navSources {
-			display: flex;
-			flex-direction: row;
-		}
-		#navSources a {
-			padding: 0 2em;
-		}
 	}
 
 	@media screen and (max-width: 1018px){
@@ -634,9 +615,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		}
         #goalImg{
             width: 400px;
-		}
-		
-		
+        }
 	}
 	@media screen and (min-width: 1550px){
 		.widthAboutUs{
