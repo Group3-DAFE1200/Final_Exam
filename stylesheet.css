@@ -25,6 +25,14 @@
 		text-decoration: none;
 	}
 
+/* Internet Explorer */
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none){
+	.body{
+		background-color:  red;
+	}
+}
+
+
 /* NAVIGATION BAR AND LOGO */
 /* Teaching source: Powell, K. (May 16th 2018). Create a responsive navigation with no JS! [video].
    Found at https://www.youtube.com/watch?v=8QKOaTYvYUA&feature=emb_logo */
