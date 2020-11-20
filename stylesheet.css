@@ -21,8 +21,12 @@
 		margin-top: 88px;
 	}
 	a{
-		color: rgb(195,149,68);
+		color: rgb(148, 98, 12);
 		text-decoration: none;
+	}
+
+	a:hover{
+		color: rgb(23,86,45);
 	}
 
 /*Fix index content for IE11*/
@@ -76,7 +80,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	}
 
     .position{
-        border-bottom: solid 2px rgb(195,149,68);
+        border-bottom: solid 2px rgb(148, 98, 12);
     }
 	
 	/* Hamburger-menu */
@@ -293,7 +297,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	.contentBlock h1{
 		text-align: center;
 		padding-bottom: 15px;
-		border-bottom: solid 3px rgb(195,149,68);
+		border-bottom: solid 3px rgb(148, 98, 12);
 		font-size: 26px;
 		width: 80%;
 		margin: auto;
@@ -426,7 +430,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
         padding: 5px;
 		margin-bottom: 15px;
 		background-color: rgb(255,253,247);
-		border: solid 1px rgb(195,149,68);
+		border: solid 1px rgb(148, 98, 12);
 		border-radius: 2px;
 		color: rgb(0,35,7);
 		height: 2em;
@@ -462,7 +466,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		appearance: none;
         display: inline-block;
         padding: 10px 20px;
-        background-color: rgb(195,149,68);
+        background-color: rgb(148, 98, 12);
         border-radius:2px;
         border: none;
         margin-top: 18px;
@@ -482,7 +486,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
         width: 100%;
 		margin:auto;
 		background-color: rgb(255,253,247);
-		border: solid 1px rgb(195,149,68);
+		border: solid 1px rgb(148, 98, 12);
 		border-radius: 2px;
 		color: rgb(0,35,7);
 	}
@@ -494,7 +498,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	.linkButton div{
 		display: inline-block;
 		padding: 10px;
-		background-color: rgb(195,149,68);
+		background-color: rgb(148, 98, 12, 1);
 		border-radius:2px;
 		margin-top: 10px;
 		text-decoration: none;
@@ -513,6 +517,11 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	.linkButton div:hover{
 		background-color: rgb(23,86,45);
 		transition: background-color 0.5s;
+	}
+
+	#navSources {
+		display: flex;
+		flex-direction: column;
 	}
 
 /* <-- Responsiveness -->*/
@@ -561,6 +570,13 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
         }
         #formContent {
             width: 60%;
+		}
+		#navSources {
+			display: flex;
+			flex-direction: row;
+		}
+		#navSources a {
+			padding-right: 1em;
 		}
 	}
 
