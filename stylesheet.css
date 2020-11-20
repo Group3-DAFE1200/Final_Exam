@@ -11,7 +11,7 @@
 
 /* <-- Global --> */
 	body{
-		background-color: var(--background-Color);
+		background-color: rgba(255,252,242,1);
 		padding: 0;
 		margin: 0;
 		font-family: Arial, Helvetica, sans-serif;
@@ -25,11 +25,17 @@
 		text-decoration: none;
 	}
 
+/* Internet Explorer */
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none){
+
+}
+
+
 /* NAVIGATION BAR AND LOGO */
 /* Teaching source: Powell, K. (May 16th 2018). Create a responsive navigation with no JS! [video].
    Found at https://www.youtube.com/watch?v=8QKOaTYvYUA&feature=emb_logo */
 	header {
-	    background-color: var(--background-Color);;
+	    background-color: rgba(255,252,242,1);;
 	    text-align: center;
 	    position: fixed;
 	    z-index: 999;
@@ -58,7 +64,7 @@
 	}
 	
 	.nav-hamburger:focus ~ .nav-hamburger-label {
-	    outline: 1px solid var(--background-Color);
+	    outline: 1px solid rgba(255,252,242,1);
 	}
 	
 	.nav-hamburger-label {
@@ -86,7 +92,7 @@
 	}
 	
 	nav {
-	    background-color: var(--background-Color);
+	    background-color: rgba(255,252,242,1);
 	    position: absolute;
 	    text-align: right;
 	    top: 100%;
@@ -201,7 +207,7 @@
     }
 
 	#footerLinkButton div{
-		background-color: var(--background-Color);
+		background-color: rgba(255,252,242,1);
 		color: var(--accent-Color-2);
 		margin-left: 2em;
 
@@ -221,7 +227,7 @@
 	#footerLinkButton div:hover{
 		background-color: var(--accent-Color-2);
 		transition: background-color 0.5s;
-		color: var(--background-Color);
+		color: rgba(255,252,242,1);
 	}
 
 	.stamp{
