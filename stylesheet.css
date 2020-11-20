@@ -485,7 +485,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 
 	@media screen and (min-width: 800px){
 
-		/* FORNT PAGE*/
+		/* FRONT PAGE*/
 		#frontPageImage{
 			height: 405px;
 		}
@@ -621,7 +621,20 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		/* PROBLEM */
         #goalImg{
             width: 400px;
-        }
+		}
+		
+		/* SOLUTION */
+		.appBlock img{
+			width: 15% !important;
+		}
+		
+		.appBlock p{
+			font-size: 18px;
+			line-height: 1.5em;
+			letter-spacing: 0.03em;
+			padding-left: 1em;
+			padding-right: 1em;
+		}
 	}
 
 	@media screen and (min-width: 1550px){
