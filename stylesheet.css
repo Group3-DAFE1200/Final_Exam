@@ -32,6 +32,10 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	.contentBlock img{
 		max-width: 30em;
 	}
+
+	#problemImg{
+		max-width: 100%;
+	}
 }
 
 
