@@ -21,8 +21,12 @@
 		margin-top: 88px;
 	}
 	a{
-		color: rgb(195,149,68);
+		color: rgb(23,86,45);
 		text-decoration: none;
+	}
+
+	a:hover{
+		color: rgb(0,35,7);
 	}
 
 /*Fix index content for IE11*/
@@ -157,7 +161,6 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	
 	nav a:hover {
 	    border-radius: 4px;
-	    /*background-color: rgba(50, 86, 93, 0.096); */
 	    color: rgb(0, 0, 0);
         font-weight: bold;
 	}
@@ -498,7 +501,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	.linkButton div{
 		display: inline-block;
 		padding: 10px;
-		background-color: rgb(195,149,68);
+		background-color: rgb(148, 98, 12, 1);
 		border-radius:2px;
 		margin-top: 10px;
 		text-decoration: none;
