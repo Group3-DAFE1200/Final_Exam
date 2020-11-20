@@ -367,7 +367,7 @@
 	}
 
 	.contentBlock sup{
-		font-size: 0.5em;
+		font-size: 0.7em;
 	}
 
 /*SOLUTION PAGE*/
@@ -438,7 +438,7 @@
 	}
 	
     #formContent{
-        width: 60%;
+        width: 100%;
         margin: auto;
         margin-top: 60px;
 	}
@@ -504,6 +504,9 @@
 		border-radius: 2px;
 		color: rgb(0,35,7);
 	}
+	#solutionHead{
+		margin-bottom: 20px;
+	}
 
 /* <-- Button --> */
 	.linkButton div{
@@ -551,6 +554,9 @@
 			line-height: 1.5em;
 			letter-spacing: 0.03em;
 		}
+		#formContent {
+            width: 70%;
+		}
 	}
 
 	@media screen and (min-width: 800px){
@@ -571,8 +577,8 @@
         #goalImg{
             width: 600px;
         }
-        #formContent input[type=text]{
-            width: 100%;
+        #formContent {
+            width: 60%;
 		}
 	}
 
@@ -602,7 +608,7 @@
 			height: 600px;
 		}
 		#content{
-			width: 65%;
+			width: 45%;
 		}
 		.contentBlock p{
 			font-size: 21px;
