@@ -601,12 +601,14 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		.linkButton{
 			font-size: 19px;
 		}
-		.widthdthAboutUs{
-			width: 418px;
-		}
         #goalImg{
             width: 400px;
         }
+	}
+	@media screen and (min-width: 1550px){
+		.widthAboutUs{
+			width: 418px;
+		}
 	}
 
     @media screen and (min-width: 1940px){
