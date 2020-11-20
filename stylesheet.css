@@ -543,14 +543,6 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		#formContent {
             width: 70%;
 		}
-
-		#navSources {
-			display: flex;
-			flex-direction: row;
-		}
-		#navSources a {
-			padding-right: 1.2em;
-		}
 	}
 
 	@media screen and (min-width: 800px){
@@ -573,6 +565,13 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
         }
         #formContent {
             width: 60%;
+		}
+		#navSources {
+			display: flex;
+			flex-direction: row;
+		}
+		#navSources a {
+			padding-right: 1em;
 		}
 	}
 
