@@ -439,6 +439,8 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	
     .submit{
 		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
         display: inline-block;
         padding: 10px 20px;
         background-color: rgb(195,149,68);
@@ -452,7 +454,6 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 	}
 	
     .submit:hover{
-		-webkit-appearance: none;
         background-color: rgb(23,86,45);
         transition: background-color 0.5s;
         cursor: pointer;
