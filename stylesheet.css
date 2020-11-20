@@ -29,6 +29,16 @@
 /*Source: Paper Leaf. (September 22nd, 2014). Targeting IE10 & IE11 Browsers with CSS.
 Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none){
+	.verticalAlignCenter{
+		display: block !important;
+	}
+	main{
+		position: relative;
+		top: 88px;
+	}
+	#content{
+		top:0 !important;
+		
 	.contentBlock img{
 		max-width: 30em;
 	}
