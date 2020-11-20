@@ -27,7 +27,51 @@
 
 /* Internet Explorer */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none){
+	.contentBlock img{
+		max-width: 100%;
+	}
 
+	#goalImg{
+		width: 150px;
+		margin-right: 20px;
+		position: relative;
+		top:20px;
+        margin-bottom: 15px;
+	}
+
+	.appBlock img{
+		width: 30%;
+		padding: 2em 0.5em 2em; 
+	}
+
+	@media screen and (min-width: 700px){
+
+		.appBlock img{
+			width: 25% !important;
+		}
+	}
+
+	@media screen and (min-width: 800px){
+        #goalImg{
+            width: 600px;
+        }
+	}
+
+	@media screen and (min-width: 900px){
+		.appBlock img{
+			width: 15% !important;
+		}
+	}
+
+	@media screen and (min-width: 1300px){
+		#frontPageImage{
+			height: 600px;
+		}
+
+        #goalImg{
+            width: 400px;
+        }
+	}
 }
 
 
