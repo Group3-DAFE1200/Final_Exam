@@ -1,4 +1,4 @@
-/* <-- Variables --> */
+/* <-- Variables -->
 :root{
 	--background-Color: rgba(255,252,242,1);
 	--accent-Color: rgb(195,149,68);
@@ -7,29 +7,35 @@
     --light-Green:rgb(201, 217, 196);
 	--moss-Green:rgb(12, 66, 31);
 	--input-background: rgb(255,253,247);
-}
+} */
 
 /* <-- Global --> */
 	body{
-		background-color: var(--background-Color);
+		background-color: rgba(255,252,242,1);
 		padding: 0;
 		margin: 0;
 		font-family: Arial, Helvetica, sans-serif;
-		color: var(--text);
+		color: rgb(0,35,7);
 	}
 	main{
-		margin-top: 80px;
+		margin-top: 88px;
 	}
 	a{
-		color: var(--accent-Color-2);
+		color: rgb(195,149,68);
 		text-decoration: none;
 	}
+
+/* Internet Explorer */
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none){
+
+}
+
 
 /* NAVIGATION BAR AND LOGO */
 /* Teaching source: Powell, K. (May 16th 2018). Create a responsive navigation with no JS! [video].
    Found at https://www.youtube.com/watch?v=8QKOaTYvYUA&feature=emb_logo */
 	header {
-	    background-color: var(--background-Color);;
+	    background-color: rgba(255,252,242,1);;
 	    text-align: center;
 	    position: fixed;
 	    z-index: 999;
@@ -47,7 +53,7 @@
 	}
 
     .position{
-        border-bottom: solid 2px var(--accent-Color);
+        border-bottom: solid 2px rgb(195,149,68);
     }
 	
 	/* Hamburger-menu */
@@ -58,7 +64,7 @@
 	}
 	
 	.nav-hamburger:focus ~ .nav-hamburger-label {
-	    outline: 1px solid var(--background-Color);
+	    outline: 1px solid rgba(255,252,242,1);
 	}
 	
 	.nav-hamburger-label {
@@ -86,7 +92,7 @@
 	}
 	
 	nav {
-	    background-color: var(--background-Color);
+	    background-color: rgba(255,252,242,1);
 	    position: absolute;
 	    text-align: right;
 	    top: 100%;
@@ -201,8 +207,8 @@
     }
 
 	#footerLinkButton div{
-		background-color: var(--background-Color);
-		color: var(--accent-Color-2);
+		background-color: rgba(255,252,242,1);
+		color: rgb(23,86,45);
 		margin-left: 2em;
 
 	}
@@ -219,16 +225,16 @@
 	}
 
 	#footerLinkButton div:hover{
-		background-color: var(--accent-Color-2);
+		background-color: rgb(23,86,45);
 		transition: background-color 0.5s;
-		color: var(--background-Color);
+		color: rgba(255,252,242,1);
 	}
 
 	.stamp{
 		position: relative;
 		margin-left: 3em;
 		margin-top: 7px;
-		color: var(--text);
+		color: rgb(0,35,7);
 		font-size: 0.9em;
 	    letter-spacing: 0.2em;
 	    font-weight: 100;
@@ -264,7 +270,7 @@
 	.contentBlock h1{
 		text-align: center;
 		padding-bottom: 15px;
-		border-bottom: solid 3px var(--accent-Color);
+		border-bottom: solid 3px rgb(195,149,68);
 		font-size: 26px;
 		width: 80%;
 		margin: auto;
@@ -365,7 +371,7 @@
 	}
 
 	#appBlockGreen{
-		background-color: var(--light-Green);
+		background-color: rgb(201, 217, 196);
 		margin-left: 0;
 		margin-right: 0;
 	}
@@ -388,7 +394,7 @@
 	}
 	
     #formContent{
-        width: 50%;
+        width: 100%;
         margin: auto;
         margin-top: 60px;
 	}
@@ -396,10 +402,10 @@
     #formContent input[type=text]{
         padding: 5px;
 		margin-bottom: 15px;
-		background-color: var(--input-background);
-		border: solid 1px var(--accent-Color);
+		background-color: rgb(255,253,247);
+		border: solid 1px rgb(195,149,68);
 		border-radius: 2px;
-		color: var(--text);
+		color: rgb(0,35,7);
 		height: 2em;
 	}
 	
@@ -430,7 +436,7 @@
     .submit{
         display: inline-block;
         padding: 10px 20px;
-        background-color: var(--accent-Color);
+        background-color: rgb(195,149,68);
         border-radius:2px;
         border: none;
         margin-top: 18px;
@@ -441,7 +447,7 @@
 	}
 	
     .submit:hover{
-        background-color: var(--accent-Color-2);
+        background-color: rgb(23,86,45);
         transition: background-color 0.5s;
         cursor: pointer;
 	}
@@ -449,17 +455,20 @@
     #message{
         width: 100%;
 		margin:auto;
-		background-color: var(--input-background);
-		border: solid 1px var(--accent-Color);
+		background-color: rgb(255,253,247);
+		border: solid 1px rgb(195,149,68);
 		border-radius: 2px;
-		color: var(--text);
+		color: rgb(0,35,7);
+	}
+	#solutionHead{
+		margin-bottom: 20px;
 	}
 
 /* <-- Button --> */
 	.linkButton div{
 		display: inline-block;
 		padding: 10px;
-		background-color: var(--accent-Color);
+		background-color: rgb(195,149,68);
 		border-radius:2px;
 		margin-top: 10px;
 		text-decoration: none;
@@ -476,7 +485,7 @@
 		transition: margin-left 0.2s;
 	}
 	.linkButton div:hover{
-		background-color: var(--accent-Color-2);
+		background-color: rgb(23,86,45);
 		transition: background-color 0.5s;
 	}
 
@@ -501,11 +510,14 @@
 			line-height: 1.5em;
 			letter-spacing: 0.03em;
 		}
+		#formContent {
+            width: 70%;
+		}
 	}
 
 	@media screen and (min-width: 800px){
 		#frontPageImage{
-			height: 335px;
+			height: 405px;
 		}
 		.flexRow_Over800px{
 			display: flex;
@@ -521,8 +533,8 @@
         #goalImg{
             width: 600px;
         }
-        #formContent input[type=text]{
-            width: 100%;
+        #formContent {
+            width: 60%;
 		}
 	}
 
@@ -552,7 +564,7 @@
 			height: 600px;
 		}
 		#content{
-			width: 65%;
+			width: 45%;
 		}
 		.contentBlock p{
 			font-size: 21px;
@@ -563,14 +575,11 @@
 		.linkButton{
 			font-size: 19px;
 		}
-		.widthAboutUs{
+		.widthdthAboutUs{
 			width: 418px;
 		}
         #goalImg{
             width: 400px;
-        }
-        #formContent input[type=text]{
-            width: 260px;
         }
 	}
 
