@@ -582,7 +582,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 			padding-left: 1em;
 			padding-right: 1em;
 		}
-
+		
 		#navSources {
 			display: flex;
 			flex-direction: row;
@@ -617,6 +617,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
         #goalImg{
             width: 400px;
 		}
+		
 		
 	}
 	@media screen and (min-width: 1550px){
