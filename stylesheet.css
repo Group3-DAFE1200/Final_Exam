@@ -394,7 +394,7 @@
 	}
 	
     #formContent{
-        width: 60%;
+        width: 100%;
         margin: auto;
         margin-top: 60px;
 	}
@@ -527,8 +527,8 @@
         #goalImg{
             width: 600px;
         }
-        #formContent input[type=text]{
-            width: 100%;
+        #formContent {
+            width: 60%;
 		}
 	}
 
@@ -558,7 +558,7 @@
 			height: 600px;
 		}
 		#content{
-			width: 65%;
+			width: 45%;
 		}
 		.contentBlock p{
 			font-size: 21px;
