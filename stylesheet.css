@@ -25,52 +25,16 @@
 		text-decoration: none;
 	}
 
-/* Internet Explorer */
+/*Fix index content for IE11*/
+/*Source: Paper Leaf. (September 22nd, 2014). Targeting IE10 & IE11 Browsers with CSS.
+Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none){
 	.contentBlock img{
-		width: 300px;
+		max-width: 30em;
 	}
 
-	#goalImg{
-		width: 150px;
-		margin-right: 20px;
-		position: relative;
-		top:20px;
-        margin-bottom: 15px;
-	}
-
-	.appBlock img{
-		width: 30%;
-		padding: 2em 0.5em 2em; 
-	}
-
-	@media screen and (min-width: 700px){
-
-		.appBlock img{
-			width: 25% !important;
-		}
-	}
-
-	@media screen and (min-width: 800px){
-        #goalImg{
-            width: 600px;
-        }
-	}
-
-	@media screen and (min-width: 900px){
-		.appBlock img{
-			width: 15% !important;
-		}
-	}
-
-	@media screen and (min-width: 1300px){
-		#frontPageImage{
-			height: 600px;
-		}
-
-        #goalImg{
-            width: 400px;
-        }
+	#problemImg{
+		max-width: 100%;
 	}
 }
 
