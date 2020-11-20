@@ -522,6 +522,13 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		transition: background-color 0.5s;
 	}
 
+	/* SOURCES */
+	#navSources {
+		display: flex;
+		flex-direction: column;
+	}
+	
+
 /* <-- Responsiveness -->*/
 	@media screen and (min-width: 550px){
 
@@ -546,6 +553,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		#formContent {
             width: 70%;
 		}
+
 	}
 
 	@media screen and (min-width: 800px){
@@ -584,6 +592,14 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 			padding-left: 1em;
 			padding-right: 1em;
 		}
+
+		#navSources {
+			display: flex;
+			flex-direction: row;
+		}
+		#navSources a {
+			padding: 0 2em;
+		}
 	}
 
 	@media screen and (max-width: 1018px){
@@ -610,7 +626,9 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		}
         #goalImg{
             width: 400px;
-        }
+		}
+		
+		
 	}
 	@media screen and (min-width: 1550px){
 		.widthAboutUs{
