@@ -460,6 +460,9 @@
 		border-radius: 2px;
 		color: var(--text);
 	}
+	#solutionHead{
+		margin-bottom: 20px;
+	}
 
 /* <-- Button --> */
 	.linkButton div{
