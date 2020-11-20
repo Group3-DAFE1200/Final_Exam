@@ -54,7 +54,7 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 
 	.appFinalImage{
 		max-width: 100%;
-		margin-bottom: 2em;
+		padding-bottom: 2em;
 	}
 }
 
