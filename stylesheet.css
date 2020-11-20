@@ -625,12 +625,12 @@ Found at http://paper-leaf.com/insights/targeting-ie-10-11-browsers-css/ */
 		
 		/* SOLUTION */
 		.appBlock img{
-			width: 15% !important;
+			width: 13% !important;
 		}
 		
 		.appBlock p{
-			font-size: 18px;
-			line-height: 1.5em;
+			font-size: 22px;
+			line-height: 1.6em;
 			letter-spacing: 0.03em;
 			padding-left: 1em;
 			padding-right: 1em;
