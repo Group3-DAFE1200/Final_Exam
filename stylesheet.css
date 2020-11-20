@@ -28,7 +28,7 @@
 /* Internet Explorer */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none){
 	.contentBlock img{
-		max-width: 50%;
+		width: 200px;
 	}
 
 	#goalImg{
