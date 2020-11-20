@@ -18,7 +18,7 @@
 		color: rgb(0,35,7);
 	}
 	main{
-		margin-top: 80px;
+		margin-top: 88px;
 	}
 	a{
 		color: rgb(195,149,68);
@@ -511,7 +511,7 @@
 
 	@media screen and (min-width: 800px){
 		#frontPageImage{
-			height: 335px;
+			height: 405px;
 		}
 		.flexRow_Over800px{
 			display: flex;
@@ -569,14 +569,11 @@
 		.linkButton{
 			font-size: 19px;
 		}
-		.widthAboutUs{
+		.widthdthAboutUs{
 			width: 418px;
 		}
         #goalImg{
             width: 400px;
-        }
-        #formContent input[type=text]{
-            width: 260px;
         }
 	}
 
